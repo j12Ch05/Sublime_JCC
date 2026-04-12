@@ -1,0 +1,15 @@
+{
+    "initializationOptions": {
+        "clangd.background-index": true,
+        "clangd.fallbackFlags": [
+            "-std=c++17",
+            "-I${project_path}/include",
+            // REPLACE the paths below with where YOUR MinGW/GLUT folders are:
+            "-IC:/MinGW/include",
+            "-IC:/freeglut/include",
+            "-DGLUT_STATIC"
+        ],
+        "clangd.completion-style": "detailed",
+        "clangd.clang-tidy": true
+    }
+}

@@ -1,0 +1,18 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"JavaIME",
+		"LSP",
+		"LSP-clangd",
+		"Obsidian Color Scheme",
+		"Open in Default Application",
+		"Package Control",
+		"Terminus",
+		"Theme - Monokai Pro",
+	],
+}

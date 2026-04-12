@@ -1,0 +1,8 @@
+[
+    { 
+        "keys": ["ctrl+`"], 
+        "command": "toggle_terminus_panel", 
+        "args": { "cwd": "${file_path:${folder}}" } 
+    },
+    { "keys": ["ctrl+."], "command": "java_ime_generate_menu" }
+]
