@@ -1,0 +1,77 @@
+{
+    "scope": "source.js, source.ts",
+    "completions": [
+        { "trigger": "log", "contents": "console.log(${1:value});" },
+        { "trigger": "warn", "contents": "console.warn(${1:value});" },
+        { "trigger": "error", "contents": "console.error(${1:value});" },
+        { "trigger": "table", "contents": "console.table(${1:value});" },
+
+        { "trigger": "const", "contents": "const ${1:name} = ${2:value};" },
+        { "trigger": "let", "contents": "let ${1:name} = ${2:value};" },
+        { "trigger": "var", "contents": "var ${1:name} = ${2:value};" },
+        { "trigger": "if", "contents": "if (${1:condition}) {\n\t${2}\n}" },
+        { "trigger": "ifelse", "contents": "if (${1:condition}) {\n\t${2}\n} else {\n\t${3}\n}" },
+        { "trigger": "for", "contents": "for (let ${1:i} = 0; ${1:i} < ${2:length}; ${1:i}++) {\n\t${3}\n}" },
+        { "trigger": "forof", "contents": "for (const ${1:item} of ${2:iterable}) {\n\t${3}\n}" },
+        { "trigger": "forin", "contents": "for (const ${1:key} in ${2:obj}) {\n\t${3}\n}" },
+        { "trigger": "while", "contents": "while (${1:condition}) {\n\t${2}\n}" },
+        { "trigger": "switch", "contents": "switch (${1:expr}) {\n\tcase ${2:value}:\n\t\t${3}\n\t\tbreak;\n\tdefault:\n\t\t${4}\n}" },
+        { "trigger": "try", "contents": "try {\n\t${1}\n} catch (${2:err}) {\n\tconsole.error(${2:err});\n}" },
+
+        { "trigger": "function", "contents": "function ${1:name}(${2:args}) {\n\t${3}\n}" },
+        { "trigger": "arrow", "contents": "const ${1:name} = (${2:args}) => {\n\t${3}\n};" },
+        { "trigger": "arrowshort", "contents": "const ${1:name} = (${2:args}) => ${3:expr};" },
+        { "trigger": "async", "contents": "async function ${1:name}(${2:args}) {\n\t${3}\n}" },
+        { "trigger": "asyncarrow", "contents": "const ${1:name} = async (${2:args}) => {\n\t${3}\n};" },
+        { "trigger": "await", "contents": "await ${1:promise}" },
+        { "trigger": "trycatch async", "contents": "try {\n\tconst ${1:result} = await ${2:promise};\n} catch (${3:err}) {\n\tconsole.error(${3:err});\n}" },
+
+        { "trigger": "class", "contents": "class ${1:Name} {\n\tconstructor(${2:args}) {\n\t\t${3}\n\t}\n}" },
+        { "trigger": "constructor", "contents": "constructor(${1:args}) {\n\t${2}\n}" },
+        { "trigger": "extends", "contents": "class ${1:Child} extends ${2:Parent} {\n\tconstructor(${3:args}) {\n\t\tsuper(${4:args});\n\t\t${5}\n\t}\n}" },
+
+        { "trigger": "map", "contents": "${1:array}.map((${2:item}) => ${3:expr})" },
+        { "trigger": "filter", "contents": "${1:array}.filter((${2:item}) => ${3:condition})" },
+        { "trigger": "reduce", "contents": "${1:array}.reduce((${2:acc}, ${3:item}) => ${4:expr}, ${5:initial})" },
+        { "trigger": "find", "contents": "${1:array}.find((${2:item}) => ${3:condition})" },
+        { "trigger": "forEach", "contents": "${1:array}.forEach((${2:item}) => {\n\t${3}\n});" },
+        { "trigger": "some", "contents": "${1:array}.some((${2:item}) => ${3:condition})" },
+        { "trigger": "every", "contents": "${1:array}.every((${2:item}) => ${3:condition})" },
+        { "trigger": "includes", "contents": "${1:array}.includes(${2:value});" },
+        { "trigger": "push", "contents": "${1:array}.push(${2:value});" },
+        { "trigger": "pop", "contents": "${1:array}.pop();" },
+        { "trigger": "splice", "contents": "${1:array}.splice(${2:index}, ${3:count});" },
+        { "trigger": "slice", "contents": "${1:array}.slice(${2:start}, ${3:end})" },
+        { "trigger": "flat", "contents": "${1:array}.flat(${2:depth})" },
+        { "trigger": "spread", "contents": "[...${1:array}]" },
+
+        { "trigger": "fetch", "contents": "fetch(\"${1:url}\")\n\t.then(res => res.json())\n\t.then(data => {\n\t\t${2}\n\t})\n\t.catch(err => console.error(err));" },
+        { "trigger": "fetchasync", "contents": "const ${1:response} = await fetch(\"${2:url}\");\nconst ${3:data} = await ${1:response}.json();" },
+
+        { "trigger": "JSON.parse", "contents": "JSON.parse(${1:string})" },
+        { "trigger": "JSON.stringify", "contents": "JSON.stringify(${1:obj}, null, ${2:2})" },
+        { "trigger": "localStorage.get", "contents": "localStorage.getItem(\"${1:key}\")" },
+        { "trigger": "localStorage.set", "contents": "localStorage.setItem(\"${1:key}\", ${2:value});" },
+
+        { "trigger": "querySelector", "contents": "document.querySelector(\"${1:selector}\")" },
+        { "trigger": "querySelectorAll", "contents": "document.querySelectorAll(\"${1:selector}\")" },
+        { "trigger": "getElementById", "contents": "document.getElementById(\"${1:id}\")" },
+        { "trigger": "addEventListener", "contents": "${1:element}.addEventListener(\"${2:event}\", (${3:e}) => {\n\t${4}\n});" },
+        { "trigger": "createElement", "contents": "document.createElement(\"${1:tag}\")" },
+        { "trigger": "appendChild", "contents": "${1:parent}.appendChild(${2:child});" },
+        { "trigger": "classList.add", "contents": "${1:element}.classList.add(\"${2:class}\");" },
+        { "trigger": "classList.remove", "contents": "${1:element}.classList.remove(\"${2:class}\");" },
+        { "trigger": "classList.toggle", "contents": "${1:element}.classList.toggle(\"${2:class}\");" },
+
+        { "trigger": "setTimeout", "contents": "setTimeout(() => {\n\t${1}\n}, ${2:1000});" },
+        { "trigger": "setInterval", "contents": "setInterval(() => {\n\t${1}\n}, ${2:1000});" },
+        { "trigger": "clearTimeout", "contents": "clearTimeout(${1:id});" },
+        { "trigger": "Promise", "contents": "new Promise((resolve, reject) => {\n\t${1}\n})" },
+        { "trigger": "Promise.all", "contents": "Promise.all([${1:promises}])" },
+
+        { "trigger": "import", "contents": "import ${1:name} from \"${2:module}\";" },
+        { "trigger": "importobj", "contents": "import { ${1:name} } from \"${2:module}\";" },
+        { "trigger": "export", "contents": "export const ${1:name} = ${2:value};" },
+        { "trigger": "exportdefault", "contents": "export default ${1:name};" }
+    ]
+}
