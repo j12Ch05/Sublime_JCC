@@ -1,5 +1,5 @@
 {
-    "scope": "source.c++",
+    "scope": "source.c++, source.c",
     "completions": [
         { "trigger": "include opengl", "contents": "#include <GL/gl.h>\n#include <GL/glu.h>\n#include <GL/glut.h>" },
         { "trigger": "include glut", "contents": "#include <GL/glut.h>" },
@@ -73,6 +73,8 @@
         { "trigger": "glPolygonMode", "contents": "glPolygonMode(${1:GL_FRONT_AND_BACK}, ${2:GL_LINE});" },
         { "trigger": "glFlush", "contents": "glFlush();" },
         { "trigger": "glFinish", "contents": "glFinish();" },
+        { "trigger": "glRasterPos2i", "contents": "glRasterPos2i();" },
+        { "trigger": "glRasterPos2f", "contents": "glRasterPos2f();" },
 
         { "trigger": "glLightfv", "contents": "glLightfv(${1:GL_LIGHT0}, ${2:GL_POSITION}, ${3:pos});" },
         { "trigger": "glMaterialfv", "contents": "glMaterialfv(${1:GL_FRONT}, ${2:GL_AMBIENT}, ${3:color});" },
@@ -118,6 +120,24 @@
         { "trigger": "GLUT_KEY_UP", "contents": "GLUT_KEY_UP" },
         { "trigger": "GLUT_KEY_DOWN", "contents": "GLUT_KEY_DOWN" },
         { "trigger": "GLUT_KEY_LEFT", "contents": "GLUT_KEY_LEFT" },
-        { "trigger": "GLUT_KEY_RIGHT", "contents": "GLUT_KEY_RIGHT" }
+        { "trigger": "GLUT_KEY_RIGHT", "contents": "GLUT_KEY_RIGHT" },
+        { "trigger": "GLint", "contents": "GLint" },
+        { "trigger": "GLuint", "contents": "GLuint" },
+        { "trigger": "GLfloat", "contents": "GLfloat" },
+        { "trigger": "GLdouble", "contents": "GLdouble" },
+        { "trigger": "GLshort", "contents": "GLshort" },
+        { "trigger": "GLushort", "contents": "GLushort" },
+        { "trigger": "GLbyte", "contents": "GLbyte" },
+        { "trigger": "GLubyte", "contents": "GLubyte" },
+        { "trigger": "GLsizei", "contents": "GLsizei" },
+        { "trigger": "GLenum", "contents": "GLenum" },
+        { "trigger": "GLbitfield", "contents": "GLbitfield" },
+        { "trigger": "GLclampf", "contents": "GLclampf" },
+        { "trigger": "GLclampd", "contents": "GLclampd" },
+        { "trigger": "GLboolean", "contents": "GLboolean" },
+        { "trigger": "glGenLists", "contents": "glGenLists(1);" },
+        { "trigger": "glNewList", "contents": "glGenLists(,GL_COMPILE);" },
+        { "trigger": "glEndList", "contents": "glEndList();" },
+        { "trigger": "glCallList", "contents": "glCallList();" },
     ]
 }
