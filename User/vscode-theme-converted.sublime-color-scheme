@@ -111,7 +111,7 @@
         {
             "name": "Function / Method",
             "scope": "support.function, entity.name.function, meta.function-call, meta.function",
-            "foreground": "#78DCE8"
+            "foreground": "#AE81FF"
         },
         {
             "name": "Entity Name Tag",
@@ -131,7 +131,7 @@
         {
             "name": "Variable",
             "scope": "variable, variable.language, entity.name.variable, punctuation.definition.variable,source.c++ meta.class.c++ meta.block.c++",
-            "foreground": "#FF5C8D"
+            "foreground": "#E991E3"
         },
         {
             "name": "Variable Parameter / Decorator",
@@ -141,7 +141,7 @@
         {
             "name": "Variable This/Self",
             "scope": "variable.language.this, variable.language.special.self, variable.parameter.function.language.special.self",
-            "foreground": "#FC9867"
+            "foreground": "#E991E3"
         },
         {
             "name": "Object Property / Key",
