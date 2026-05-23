@@ -28,4 +28,13 @@
     [
         "Vintage",
     ],
+    "file_exclude_patterns": [
+        "*.pyc", 
+        "*.pyo", 
+        "*.pyd", 
+        "*.obj", 
+        "*.safetensors", 
+        "*.dll", 
+        "*.lib"
+    ],
 }

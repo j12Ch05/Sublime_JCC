@@ -6,12 +6,14 @@
 	"installed_packages":
 	[
 		"A File Icon",
+		"AdvancedNewFile",
+		"FileManager",
 		"JavaIME",
-		"LSP",
 		"LSP-clangd",
 		"Obsidian Color Scheme",
 		"Open in Default Application",
 		"Package Control",
+		"subl-comment-snippets",
 		"Terminus",
 		"Theme - Monokai Pro",
 	],

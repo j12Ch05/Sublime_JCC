@@ -10,6 +10,7 @@
             "-DGLUT_STATIC"
         ],
         "clangd.completion-style": "detailed",
-        "clangd.clang-tidy": true
-    }
+        "clangd.clang-tidy": true,
+    },
+    "binary": "auto",
 }
