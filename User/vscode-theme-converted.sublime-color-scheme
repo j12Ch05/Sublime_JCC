@@ -4,7 +4,7 @@
     "variables": {
         "background": "#141414",
         "foreground": "#C7C7C7",
-        "comment": "#545454",
+        "comment": "#6A9955",
         "red": "#FC6A67",
         "orange": "#FC9867",
         "yellow": "#FFD866",
@@ -19,7 +19,7 @@
         "line_highlight": "#8F8F8F0F"
     },
     "globals": {
-        "background": "#141414",
+        "background": "#212121",
         "foreground": "#C7C7C7",
         "caret": "#FFD866",
         "block_caret": "#FFD866",
@@ -31,7 +31,7 @@
         "highlight": "#8F8F8F4D",
         "find_highlight": "#8F8F8F30",
         "find_highlight_foreground": "#C7C7C7",
-        "gutter": "#141414",
+        "gutter": "#212121",
         "gutter_foreground": "#383E3A",
         "gutter_foreground_highlight": "#919191",
         "line_diff_width": "2",
@@ -55,13 +55,13 @@
         {
             "name": "Comment",
             "scope": "comment, punctuation.definition.comment, string.quoted.docstring",
-            "foreground": "#545454",
+            "foreground": "#6A9955",
             "font_style": "italic"
         },
         {
             "name": "String",
             "scope": "string, string.quoted, string.template, punctuation.definition.string",
-            "foreground": "#A9DC76"
+            "foreground": "#85BB5C"
         },
         {
             "name": "String Docstring / Block",
@@ -71,12 +71,12 @@
         {
             "name": "Number",
             "scope": "constant.numeric",
-            "foreground": "#FC9867"
+            "foreground": "#FFB86C"
         },
         {
             "name": "Constant",
             "scope": "constant, constant.language, support.constant",
-            "foreground": "#FC6A67"
+            "foreground": "#AE81FF"
         },
         {
             "name": "Constant Character Escape",
@@ -126,12 +126,12 @@
         {
             "name": "Type / Class",
             "scope": "entity.name.type, support.type, support.class, entity.other.inherited-class, keyword.type, storage.type.java",
-            "foreground": "#AB9DF2"
+            "foreground": "#FF6188"
         },
         {
             "name": "Variable",
-            "scope": "variable, variable.language, entity.name.variable, punctuation.definition.variable",
-            "foreground": "#FF6188"
+            "scope": "variable, variable.language, entity.name.variable, punctuation.definition.variable,source.c++ meta.class.c++ meta.block.c++",
+            "foreground": "#FF5C8D"
         },
         {
             "name": "Variable Parameter / Decorator",
@@ -196,7 +196,7 @@
         {
             "name": "Punctuation",
             "scope": "punctuation, meta.brace, punctuation.definition.parameters, punctuation.separator, punctuation.terminator, punctuation.accessor",
-            "foreground": "#C7C7C766"
+            "foreground": "#CFD0C2"
         },
         {
             "name": "Markdown Heading",
@@ -266,6 +266,21 @@
             "scope": "invalid.deprecated",
             "foreground": "#FFD866",
             "background": "#FFD86620"
-        }
+        },
+{
+    "name": "Using Namespace Keyword",
+    "scope": "source.c++ ,keyword.control.c++,source.c++ meta.class.c++ meta.block.c++",
+    "foreground": "#AE81FF"
+},
+{
+    "name": "Namespace Keyword",
+    "scope": "storage.type.namespace.definition.cpp, entity.name.namespace.cpp, meta.using-directive.cpp, keyword.other.namespace.cpp",
+    "foreground": "#AE81FF"
+},
+{
+    "name": "Namespace Name (std)",
+    "scope": "entity.name.namespace, meta.using-directive.cpp entity.name.type, meta.using-directive.cpp support",
+    "foreground": "#AE81FF"
+}
     ]
 }
