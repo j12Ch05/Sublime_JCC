@@ -136,8 +136,9 @@
         { "trigger": "GLclampd", "contents": "GLclampd" },
         { "trigger": "GLboolean", "contents": "GLboolean" },
         { "trigger": "glGenLists", "contents": "glGenLists(1);" },
-        { "trigger": "glNewList", "contents": "glGenLists(,GL_COMPILE);" },
+        { "trigger": "glNewList", "contents": "glNewList(,GL_COMPILE);" },
         { "trigger": "glEndList", "contents": "glEndList();" },
         { "trigger": "glCallList", "contents": "glCallList();" },
+        { "trigger": "glDeleteLists", "contents": "glDeleteLists(start,end);" },
     ]
 }
